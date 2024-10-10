@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pesquisa</string>
+    <string name="title_activity_resultado">Resultado</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Estimulada">
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#000000"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btEnviar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgCandidatos" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="696dp"
+        android:text="PESQUISA ELEITORAL"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="611dp"
+        android:text="Escolha um dos canditados abaixo para votar: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <RadioGroup
+        android:id="@+id/rgCandidatos"
+        android:layout_width="170dp"
+        android:layout_height="349dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="213dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <RadioButton
+            android:id="@+id/rbZoro"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="Roronoa Zoro" />
+
+        <RadioButton
+            android:id="@+id/rbSaitama"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="Saitama" />
+
+        <RadioButton
+            android:id="@+id/rbSnape"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="Snape" />
+
+        <RadioButton
+            android:id="@+id/rbBojack"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="BoJack" />
+
+        <RadioButton
+            android:id="@+id/rbRick"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="Rick" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="97dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rgCandidatos"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/zoro" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="97dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="428dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rgCandidatos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/saitama" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="97dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rgCandidatos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/snape" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="97dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="291dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rgCandidatos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/boojack" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="97dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="223dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rgCandidatos"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rick" />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="@color/black"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgCandidatos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
